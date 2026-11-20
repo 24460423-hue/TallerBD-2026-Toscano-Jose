@@ -1,0 +1,177 @@
+/* Apariencia general */
+body {
+    margin: 0;
+    background-color: #eef3f8;
+    color: #182c3f;
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+}
+
+/* Encabezado y navegación */
+header {
+    padding: 1.5rem 1rem;
+    background-color: #16354a;
+    color: #ffffff;
+}
+
+header h1,
+nav {
+    max-width: 60rem;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 2rem;
+    line-height: 1.2;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    padding: 0;
+    margin: 1rem 0 0;
+    list-style: none;
+}
+
+nav a {
+    display: block;
+    padding: 0.45rem 0.75rem;
+    border: 1px solid #7996a7;
+    border-radius: 0.4rem;
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover,
+nav a:focus-visible {
+    background-color: #e8f4ff;
+    color: #16354a;
+}
+
+nav a:focus-visible {
+    outline: 2px solid white;
+    outline-offset: 3px;
+}
+
+/* Área principal y secciones */
+main {
+    max-width: 60rem;
+    margin: 1.5rem auto;
+    padding: 0 1rem;
+}
+
+main section {
+    margin-bottom: 1rem;
+    padding: 1.25rem;
+    border: 1px solid #d3dee8;
+    border-radius: 0.6rem;
+    background-color: white;
+}
+
+main section:target {
+    border-color: #23668f;
+}
+
+h2 {
+    margin: 0;
+    font-size: 1.35rem;
+}
+
+p {
+    margin: 0.5rem 0 0;
+}
+
+/* Formularios */
+h3 {
+    margin: 1rem 0 0.65rem;
+    font-size: 1.1rem;
+}
+
+.formulario {
+    display: grid;
+    gap: 0.85rem 1.25rem;
+}
+
+.campo {
+    display: grid;
+    gap: 0.3rem;
+    min-width: 0;
+}
+
+.campo label {
+    font-weight: bold;
+}
+
+.campo input,
+.campo select {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0.55rem 0.7rem;
+    border: 1px solid #7996a7;
+    border-radius: 0.4rem;
+    background-color: white;
+    color: inherit;
+    font: inherit;
+}
+
+.acciones-formulario {
+    grid-column: 1 / -1;
+}
+
+.acciones-formulario button {
+    padding: 0.5rem 0.85rem;
+    border: 1px solid #7996a7;
+    border-radius: 0.4rem;
+    font: inherit;
+}
+
+.acciones-formulario button:disabled {
+    background-color: #eef3f8;
+    color: #435869;
+}
+
+@media (min-width: 42rem) {
+    .formulario {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* Consultas y tablas */
+.consulta {
+    margin-top: 1rem;
+    border: 1px solid #d3dee8;
+    border-radius: 0.4rem;
+}
+
+.consulta summary {
+    padding: 0.7rem 0.85rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.filtro-historial {
+    padding: 0.5rem 0.85rem 1rem;
+}
+
+.tabla-contenedor {
+    overflow-x: auto;
+}
+
+.consulta table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.consulta th,
+.consulta td {
+    padding: 0.65rem 0.85rem;
+    border-top: 1px solid #d3dee8;
+    vertical-align: top;
+}
+
+.consulta th,
+.consulta tbody tr:nth-child(even) {
+    background-color: #eef3f8;
+}
