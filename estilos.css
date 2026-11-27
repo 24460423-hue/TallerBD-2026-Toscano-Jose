@@ -175,3 +175,18 @@ h3 {
 .consulta tbody tr:nth-child(even) {
     background-color: #eef3f8;
 }
+
+/* Acceso a la plataforma */
+.sesion-actual {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem 1rem;
+    max-width: 60rem;
+    margin: 0.75rem auto 0;
+}
+
+.sesion-actual p {
+    margin: 0;
+}
